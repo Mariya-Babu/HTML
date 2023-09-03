@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout - 2 </title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: antiquewhite;
+            padding: 20px;
+            border: 1px solid black;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+            background-color:yellow;
+        }
+
+        /* first row styling  */
+        .first{
+            display: flex;
+            justify-content: space-between;
+        }
+        .first .first1{
+            flex-grow: 2;
+        }
+        .first .first2{
+            flex-grow: 4;
+        }
+
+        /* second row styling  */
+        .second{
+            display: flex;
+            justify-content: space-between;
+        }
+        .second .second1{
+            flex-grow: 1;
+        }
+        .second .second2{
+            flex-grow: 1;
+        }
+        .second .second3{
+            flex-grow: 1;
+        }
+        .second .second4{
+            flex-grow: 1;
+        }
+        .second .second5{
+            flex-grow: 2;
+        }
+
+        /* third row styling  */
+        .third{
+            display: flex;
+            justify-content: space-between;
+        }
+        .third .third1{
+            flex-grow: 2;
+        }
+        .third .third2{
+            flex-grow: 3;
+        }
+        .third .third3{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="first1 box">
+
+            </div>
+            <div class="first2 box">
+
+            </div>
+        </div>
+        <div class="second">
+            <div class="second1 box"></div>
+            <div class="second2 box"></div>
+            <div class="second3 box"></div>
+            <div class="second4 box"></div>
+            <div class="second5 box"></div>
+        </div>
+        <div class="third">
+            <div class="third1 box"></div>
+            <div class="third2 box"></div>
+            <div class="third3 box"></div>
+        </div>
+    </div>
+</body>
+</html>
